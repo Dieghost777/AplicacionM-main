@@ -25,6 +25,6 @@ export class AuthService {
   }
 
   isUserLoggedIn(): boolean {
-    return this.isLoggedIn;
+    return this.isLoggedIn
   }
 }
