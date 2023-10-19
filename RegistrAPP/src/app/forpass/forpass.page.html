@@ -1,0 +1,31 @@
+<ion-content>
+  <div id="header">
+    <div id="app-bar">
+      <ion-icon name="arrow-back" (click)="goBack()" color="warning" size="large"></ion-icon>
+      <div id="logo">
+        <img src="\assets\img\ImgLogin\logo_duoc.png" alt="logo_duoc">
+      </div>
+      <div></div>
+    </div>
+
+    <h1 style="font-weight: bold; color: #0a123a;">Restablecer contraseña</h1>
+    <h6 style="font-weight: bold; color: #0a123a;">Le enviaremos un correo para que recupere su contraseña</h6>
+  </div>
+
+  <div class="wrapper">
+    <ion-card class="form-wrapper">
+      <ion-input
+        type="email"
+        fill="solid"
+        label="Email"
+        labelPlacement="floating"
+        helperText="Introduzca un email válido"
+        errorText="Email inválida :c"
+        [(ngModel)]="correo"
+      ></ion-input>
+    </ion-card>
+    <ion-button color="warning" expand="block" style="font-weight: bold; color: rgb(6, 3, 54);" (click)="verificarCorreo()">
+      Enviar
+    </ion-button>
+  </div>
+</ion-content>

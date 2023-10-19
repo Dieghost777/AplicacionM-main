@@ -1,0 +1,29 @@
+<ion-content>
+  <div id="header">
+    <div id="app-bar">
+      <ion-icon name="arrow-back" (click)="goBack()" color="warning" size="large"></ion-icon>
+      <div id="logo">
+        <img src="\assets\img\ImgLogin\logo_duoc.png" alt="logo_duoc">
+      </div>
+      <div></div>
+    </div>
+  </div>
+
+  <div class="wrapper">
+    <ion-card class="form-wrapper">
+      <img src="\assets\img\ImgLogin\user.png" alt="usericon">
+    <ion-card-header>
+      Datos del Usuario
+    </ion-card-header>
+    <ion-card-content>
+      <ion-label>Nombre: </ion-label>
+      <ion-text>{{ usuario.nombre }}</ion-text>
+    </ion-card-content>
+    <ion-card-content>
+      <ion-label>Correo: </ion-label>
+      <ion-text>{{ usuario.correo }}</ion-text>
+    </ion-card-content>
+  </ion-card>
+  </div>
+  
+</ion-content>

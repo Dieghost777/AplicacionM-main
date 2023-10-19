@@ -1,0 +1,36 @@
+<ion-content>
+  <div id="header">
+    <div id="app-bar">
+      <ion-icon name="arrow-back" (click)="goBack()" color="warning" size="large"></ion-icon>
+      <div id="logo">
+        <img src="\assets\img\ImgLogin\logo_duoc.png" alt="logo_duoc">
+      </div>
+      <div></div>
+    </div>
+
+    <h1 style="font-weight: bold; color: #0a123a;">Registro</h1>
+    <p style="font-weight: bold; color: #0a123a;">Regístrate para acceder a la aplicación.</p>
+  </div>
+
+  <div class="wrapper">
+    <ion-card class="form-wrapper">
+      <ion-card-content>
+        <form [formGroup]="formularioRegistro" (ngSubmit)="guardar()">
+          <ion-item>
+            <ion-icon name="person"></ion-icon>
+            <ion-input type="text" placeholder="Nombre" formControlName="nombre"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="mail"></ion-icon>
+            <ion-input type="text" placeholder="Correo" formControlName="correo"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="lock-closed"></ion-icon>
+            <ion-input type="password" placeholder="Contraseña" formControlName="contrasena"></ion-input>
+          </ion-item>
+          <ion-button type="submit" color="warning" expand="block" style="font-weight: bold; color: rgb(6, 3, 54);">Registrarse</ion-button>
+        </form>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
